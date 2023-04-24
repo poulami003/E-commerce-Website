@@ -19,75 +19,64 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
             </ul>
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/p1.webp" width="100%" id="mainimage" alt="error">
 
-        <h2>#KnownUs</h2>
-        <p>TRUSTIN WHAT YOU LOVE </p>
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/products/p1.webp" alt="error" width="100%" class="small-img">
+                </div>
 
-    </section>
+                <div class="small-img-col">
+                    <img src="images/products/p2.webp" alt="error" width="100%" class="small-img">
+                </div>
 
+                <div class="small-img-col">
+                    <img src="images/products/p4.webp" alt="error" width="100%" class="small-img">
+                </div>
 
-    <section id="about-head" class="section-p1">
-        
-        <img src="images/pictures/about.avif" alt="error">
-        
-        <div class="about">
-            <h1>who we are?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus recusandae suscipit tempora quia, sapiente commodi magni voluptatibus animi alias ipsam fugiat quaerat minima laborum perferendis vitae totam error, debitis accusantium itaque, optio cum? Consequatur dolores obcaecati omnis incidunt sapiente, ea exercitationem tempora nam totam! Vitae repellat tempora error accusamus voluptatem recusandae quaerat hic, expedita velit corporis quisquam rem, at facilis, possimus officiis asperiores nostrum unde? Sunt, libero? Debitis illo minima eaque minus ea quos tempore corporis ipsum?</p>
+                <div class="small-img-col">
+                    <img src="images/products/p3.webp" alt="error" width="100%" class="small-img">
+                </div>
 
-            <abbr title="">Create stunning images with as much or as little control as you like thanks to a choice of basic and creative modes </abbr>
-
-            <br><br>
-
-            <marquee bgcolor="#ccc"  loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as little control as you like thanks to a choice of basic and creative modes</marquee>
+            </div>
         </div>
-    </section>
+        <div class="single-pro-details">
+            <h6>Home / Women's Brown Self Design Crop Shrug</h6>
+            <p>STYLE QUOTIENT</p>
+            <h4>Women's Brown Self Design Crop Shrug</h4>
+            <h2>Rs. 590.00</h2>
+            <p>Tax included.</p>
+            <select>
+                <option class="s">Select Size</option>
+                <option>Small</option>
+                <option>Large</option>
+                <option>xl</option>
+                <option>xxl</option>
+                <input type="number" value="1">
+                <button>Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>Style Quotient always allows you to be your own style diva and with this stylish women'sshrug you will be.Make a
+                statement with this shrug. This shrugfeatures abeautiful pattern and also in fit which is perfect to layer over and wear
+                under. Made from the finest quality of fabric. Style it with a pair of slim jeans and let your shrug do the talking!</span>
+                <h4>Wash Care</h4>
+                <span>Do not bleach. For the first time wash, always prefer dry cleaning or simple hand wash. Avoid
+                    soaking for a long time,
+                    wash in normal temperature water, dry in the shade, and iron after drying.</span>
 
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="images/1.mp4"></video>
+            </select>
         </div>
-    </section>
 
-    <h1 class="service">Our Services</h1>
-
-    <section id="feature" class="section-p1">
-        
-        <div class="fe-box">
-            <img src="images/shi.avif" alt="error" class="image">
-            <h3>Free Shipping</h3>
-        </div>
-    
-        <div class="fe-box">
-            <img src="images/online.jpg" alt="error" class="image">
-            <h3>Online Order</h3>
-        </div>
-    
-        <div class="fe-box">
-            <img src="images/money.png!f305cw" alt="error" class="image">
-            <h3>Save Money</h3>
-        </div>
-    
-        <div class="fe-box">
-            <img src="images/promotion.webp" alt="error" class="image">
-            <h3>Promotions</h3>
-        </div>
-    
-        <div class="fe-box">
-            <img src="images/support.avif" alt="error" class="image">
-            <h3>24/7 Support</h3>
-        </div>
-    
     </section>
 
 
@@ -102,10 +91,9 @@
         </div>
     </section>
 
-
     <footer class="section-p1">
         <div class="col">
-            <img src="images/logo.png" alt="error" class="logo1">
+            <img src="images/logo.png" alt="error" class=" logo1">
             <h4>Contact</h4>
             <p><strong>Address: </strong>Galaxy Mall, Asansol</p>
             <p><strong>Phone: </strong>(+91) 9339477232</p>
@@ -155,6 +143,27 @@
 
 
     </footer>
+
+    <script>
+        var mainimage = document.getElementById("mainimage")
+        var smalling = document.getElementsByClassName("small-img")
+
+        smalling[0].onclick = function () {
+            mainimage.src = smalling[0].src;
+        }
+
+        smalling[1].onclick = function () {
+            mainimage.src = smalling[1].src;
+        }
+
+        smalling[2].onclick = function () {
+            mainimage.src = smalling[2].src;
+        }
+
+        smalling[3].onclick = function () {
+            mainimage.src = smalling[3].src;
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
